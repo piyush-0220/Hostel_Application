@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hostel_bg"
+    tools:context=".reserve_room">
+
+    <LinearLayout
+        android:id="@+id/h_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/h_ll"
+        android:background="@color/blur_bg"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/pd_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/reserve_empty_notes"
+
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No student's are available !!"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_head"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone"
+
+            android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/ll_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+      android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

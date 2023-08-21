@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/hostel_bg"
+    android:layout_height="match_parent"
+    tools:context=".GalleryFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blur_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/otherss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/gallery_empty_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Gallery Data Available !!"
+        android:textColor="@color/text_color_head"
+        android:textSize="@dimen/text_size"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:id="@+id/pd_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

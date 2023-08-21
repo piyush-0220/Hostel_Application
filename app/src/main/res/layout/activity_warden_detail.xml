@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hostel_bg"
+    android:orientation="vertical"
+    tools:context=".warden_detail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingHorizontal="50sp"
+        android:background="@color/blur_bg"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/warden_IV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/dp" />
+
+
+        <EditText
+
+            android:id="@+id/warden_n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="8dp"
+            android:hint="Name"
+            android:padding="12dp"
+
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:inputType="text"
+
+
+            />
+
+
+        <EditText
+           android:id="@+id/warden_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/edt_bg"
+            android:drawableTint="@color/black"
+            android:drawableStart="@drawable/baseline_local_phone_24"
+            android:drawablePadding="8dp"
+            android:hint="Phone"
+            android:padding="12dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+
+
+            />
+
+        <EditText
+            android:id="@+id/warden_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/select"
+            android:drawablePadding="8dp"
+            android:hint="Post"
+            android:padding="12dp"
+
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+
+
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/warden_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/warden_hostel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/edt_bg"
+            android:drawableTint="@color/black"
+            android:drawableStart="@drawable/ic_baseline_other_houses_24"
+            android:drawablePadding="8dp"
+            android:hint="warden of"
+
+            android:padding="12dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+
+
+            />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="50dp"
+            >
+
+            <ProgressBar
+                android:id="@+id/pd_updt_warden"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+
+
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_sub"
+
+                android:padding="5dp"
+                android:text="upload"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

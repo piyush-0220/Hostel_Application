@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/my_Request"
+        android:title="My Request"
+        android:icon="@drawable/ic_baseline_notes_24"
+
+        />
+
+    <item android:id="@+id/Service"
+        android:title="Service "
+        android:icon="@drawable/ic_baseline_miscellaneous_services_24"
+
+        />
+
+    <item android:id="@+id/Support"
+        android:title="Support"
+        android:icon="@drawable/ic_baseline_support_agent_24"
+
+        />
+
+    <item android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/ic_baseline_share_24"
+
+        />
+    <item android:id="@+id/rate_a"
+        android:title="Rate us"
+        android:icon="@drawable/ic_baseline_thumb_up_24"
+
+        />
+
+    <item android:id="@+id/Logout"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="Logout"
+
+
+        />
+
+
+
+
+
+</menu>

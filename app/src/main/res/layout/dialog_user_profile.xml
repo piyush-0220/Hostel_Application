@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:elevation="20dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="path"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/user_email_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+
+
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_marginTop="20dp"
+            >
+
+            <ProgressBar
+                android:id="@+id/pd_updt_warden"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+
+
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_btn_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color"
+
+                android:padding="5dp"
+                android:text="upload"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

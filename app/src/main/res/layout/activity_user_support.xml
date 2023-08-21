@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_support_activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="-170dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hostel_bg" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blur_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="-90dp"
+                android:paddingHorizontal="55sp"
+
+
+                android:src="@drawable/splah" />
+
+            <TextView
+                android:id="@+id/support_empty_notes"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="@string/room_empty_note"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_head"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+
+
+                />
+
+            <LinearLayout
+
+                android:id="@+id/ll_layout_suppot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35sp"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+                <EditText
+                    android:id="@+id/name_edt_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/edt_bg"
+                    android:cursorVisible="false"
+                    android:drawableStart="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:enabled="true"
+                    android:hint="Name"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/room_no_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/edt_bg"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableStart="@drawable/baseline_home_24"
+                    android:drawablePadding="8dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Room no"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/user_category_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/edt_bg"
+
+                    android:cursorVisible="false"
+                    android:drawableStart="@drawable/ic_baseline_support_agent_24"
+                    android:drawablePadding="8dp"
+
+                    android:hint="Support category"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/pending_edt_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/edt_bg"
+                    android:drawableStart="@drawable/ic_baseline_pending_actions_24"
+                    android:drawablePadding="8dp"
+                    android:enabled="false"
+                    android:hint="Pending"
+
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+
+                    android:textStyle="bold"
+
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/description_edt_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/edt_bg"
+                    android:drawableStart="@drawable/ic_baseline_description_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Description"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+
+
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/submit_btn_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_sub"
+                    android:layout_marginHorizontal="70dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

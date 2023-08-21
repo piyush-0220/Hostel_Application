@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "350662281827",
+    "project_id": "gpj-hostel",
+    "storage_bucket": "gpj-hostel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350662281827:android:637dbbaf66929119f64656",
+        "android_client_info": {
+          "package_name": "com.example.hostel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350662281827-3refv2qekf8slmcppbor761e88345h6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQSa3jVwmBU2fD6GlkP71C43O2is-m1n8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350662281827-3refv2qekf8slmcppbor761e88345h6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

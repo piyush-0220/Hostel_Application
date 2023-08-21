@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hostel"
+        tools:targetApi="31">
+        <activity
+            android:name=".FeeDetail"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:theme="@style/Register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Update_warden"
+            android:exported="false" />
+        <activity
+            android:name=".Update_student"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateStatus"
+            android:exported="false" />
+        <activity
+            android:name=".user_profile"
+            android:exported="false"
+            android:theme="@style/home" />
+        <activity
+            android:name=".user_support_activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".user_service_activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".user_request_activity"
+            android:exported="false"
+            android:theme="@style/home" />
+        <activity
+            android:name=".Gallery_user"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLeave"
+            android:exported="false" />
+        <activity
+            android:name=".warden_detail"
+            android:exported="false" />
+        <activity
+            android:name=".uploadImage"
+            android:exported="false"
+            android:theme="@style/home" />
+        <activity
+            android:name=".FullImageView"
+            android:exported="false"
+            android:theme="@style/home" />
+        <activity
+            android:name=".ForgetPassword"
+            android:exported="false"
+            android:theme="@style/authentication" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/Register" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/authentication"></activity>
+        <activity
+            android:name=".update_room"
+            android:exported="false" />
+        <activity
+            android:name=".add_student_room"
+            android:exported="false" />
+        <activity
+            android:name=".reserve_room"
+            android:exported="false"
+            android:theme="@style/home" />
+        <activity
+            android:name=".Add_room"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="true"
+            android:theme="@style/home" />
+        <activity
+            android:name=".room_detail"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

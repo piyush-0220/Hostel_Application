@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hostel_bg"
+    android:orientation="vertical"
+    tools:context=".Add_room">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blur_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:paddingTop="55sp"
+            android:paddingHorizontal="55sp"
+
+
+            android:src="@drawable/splah" />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        >
+
+
+    <EditText
+            android:id="@+id/updt_room_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/ic_baseline_room_24"
+            android:drawablePadding="8dp"
+            android:hint="Room"
+            android:padding="12dp"
+        android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+
+
+            />
+        <EditText
+            android:id="@+id/updt_bed_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/baseline_single_bed_24"
+            android:drawablePadding="8dp"
+            android:hint="Bed"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="50dp"
+
+            >
+
+            <ProgressBar
+                android:id="@+id/pd_updt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:progressTint="@color/app_color"
+               />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updt_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/bg_button"
+                android:text="Update"
+
+                android:textColor="@color/white"
+                android:textSize="19dp"
+
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
