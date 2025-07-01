@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.hostel'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.hostel"
-        minSdk 24
-        targetSdk 33
+        minSdk 29
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -41,16 +41,18 @@ dependencies {
 
 
     testImplementation 'junit:junit:4.13.2'
-    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.github.markushi:circlebutton:1.1'
     //implementation 'de.hdodenhof:circleimageview:3.1.0'//Circle image view
 
     //we use meow navigation
-    implementation 'com.etebarian:meow-bottom-navigation-java:1.2.0'
+    implementation 'com.github.oneHamidreza:MeowBottomNavigationJava:17497600f2'
+
+    implementation 'com.github.smarteist:Android-Image-Slider:1.4.0'
 
     //we also need fragment navigation
     implementation 'androidx.navigation:navigation-fragment:2.3.5'

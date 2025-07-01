@@ -39,16 +39,21 @@ public class warden_adapter extends RecyclerView.Adapter<warden_adapter.ViewHold
     public void onBindViewHolder(@NonNull warden_adapter.ViewHolder holder, int position) {
         warden_data warden_data = list.get(position);
         holder.warden_name.setText(warden_data.getWarden_name());
+        holder.warden_name_.setText(warden_data.getWarden_name());
         holder.warden_email.setText(warden_data.getWarden_email());
         holder.warden_phone.setText(warden_data.getWarden_phone());
         holder.warden_hostel_name.setText(warden_data.getWarden_hostel());
         holder.warden_post_name.setText(warden_data.getWarden_post());
         holder.warden_post_name_.setText(warden_data.getWarden_post());
         try
-        {   if(warden_data.getWarden_image().equals(""))
         {
+            if(warden_data.getWarden_image().equals(""))
+        {
+
             holder.warden_dp.setBackgroundResource(R.drawable.dp);
-        }else {
+
+        } else {
+
             Glide.with(context).load(warden_data.getWarden_image()).into(holder.warden_dp);
         }
         }catch (Exception e)
